@@ -1,0 +1,9 @@
+CREATE KEYSPACE demo WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+
+DESCRIBE KEYSPACES;
+
+create table Uday(uid int,uname text,PRIMARY KEY (uid));
+
+insert into Uday("uid","uname") values (1,"uday");
+
+select * from Uday;
